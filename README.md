@@ -97,3 +97,6 @@ System.out.println("It is odd");
 }
 }
 ```
+
+4. Create a program that generates a random number <code>(int)</code> between **1–5**, and
+   check/print whether the number is below or above three.
