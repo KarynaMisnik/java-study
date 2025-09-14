@@ -74,3 +74,26 @@ System.out.println("Invalid");
 }
 }
 ```
+
+3. Create a variable number <code>(int)</code> and check whether the value assigned to the number
+   variable is **even** or **odd**. Print the result to the terminal.
+
+```java
+import java.util.Scanner;
+
+public class OddEven{
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+System.out.println("Enter your number: ");
+
+int num = scanner.nextInt();
+
+if(num % 2 == 0){
+System.out.println("It is even");
+}else{
+System.out.println("It is odd");
+}
+
+}
+}
+```
