@@ -120,3 +120,29 @@ System.out.println(ran + " Random number is equal to 3");
 5. Create a program where you define the name of a month <code>(String)</code> and print how
    many days are in that month (February = 28, April/June/September/November = 30,
    others = 31). Use <code>switch/case</code>.
+
+```java
+public class Month {
+    public static void main(String[] args) {
+
+        String month = "February";
+
+        switch (month) {
+            case "February":
+                System.out.println("28 days");
+                break;
+
+            case "April":
+            case "June":
+            case "September":
+            case "November":
+                System.out.println("30 days");
+                break;
+
+            default:
+                System.out.println("31 days");
+                break;
+        }
+    }
+}
+```
