@@ -116,3 +116,7 @@ System.out.println(ran + " Random number is equal to 3");
 }
 }
 ```
+
+5. Create a program where you define the name of a month <code>(String)</code> and print how
+   many days are in that month (February = 28, April/June/September/November = 30,
+   others = 31). Use <code>switch/case</code>.
