@@ -146,3 +146,6 @@ public class Month {
     }
 }
 ```
+
+6. Define three integers and print which one is the largest. For example, with the
+   numbers 5, 7, 7 the program should print → The largest is 7.
