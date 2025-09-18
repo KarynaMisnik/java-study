@@ -10,6 +10,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
 
 - [Introduction](#introduction)
 - [Comments](#comments)
+- [Scanner](#scanner)
 
 ## Introduction
 
@@ -43,6 +44,60 @@ System.out.println("World");
 ```
 
 👉 Comments are ignored by the computer but help humans understand the code.
+
+## Scanner
+
+The **Scanner class** is a built-in class in Java (found in the <code>java.util</code> package) that allows programs to read input. It can read different types of data such as strings, numbers, and booleans from various sources (keyboard, files, etc.).
+
+To use **Scanner**, you need to import it:
+
+```java
+import java.util.Scanner;
+```
+
+Usually created like this to read from the keyboard:
+
+```java
+Scanner sc = new Scanner(System.in);
+```
+
+<code>Scanner</code> → the class (blueprint provided by Java).
+
+<code>sc</code> → the object (an instance of the Scanner class).
+
+<code>new Scanner(System.in)</code> → creates a new Scanner object that takes input from the keyboard (<code>System.in</code>).
+In Java, almost everything is done through objects.
+Creating <code>Scanner sc</code> is an example of instantiating a class (turning the blueprint into a real usable thing).
+
+<ins>Common methods:</ins>
+
+<code>nextLine()</code> → reads a full line of text.
+
+<code>next()</code> → reads a single word (until space).
+
+<code>nextInt()</code> → reads an integer.
+
+<code>nextDouble()</code> → reads a decimal number.
+
+<code>nextBoolean()</code> → reads a true/false value.
+
+Example:
+
+```java
+import java.util.Scanner;
+
+public class ScannerExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.println("Hello " + name);
+        sc.close();
+    }
+}
+```
 
 ## Exercise 1
 
