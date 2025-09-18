@@ -1,4 +1,18 @@
-# 🤓
+# ☕ Java Studies & Notes
+
+Java Studies & Notes – A collection of notes, exercises, and examples from my university Java course and MOOC.fi practice, aimed at reinforcing core concepts and practical programming skills.
+
+<div>
+<img src='https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white'>
+</div>
+
+# Navigate:
+
+- [INtroduction](#introduction)
+
+## Introduction
+
+**Programming** is the process of designing, writing, testing, and maintaining a set of instructions, known as a program, that a computer can execute to perform specific tasks. It involves using a programming language, which provides a formal syntax and semantics that the computer can interpret or compile into machine-readable code.
 
 ## Exercise 1
 
