@@ -8,11 +8,13 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
 
 # Navigate:
 
-- [INtroduction](#introduction)
+- [Introduction](#introduction)
 
 ## Introduction
 
 **Programming** is the process of designing, writing, testing, and maintaining a set of instructions, known as a program, that a computer can execute to perform specific tasks. It involves using a programming language, which provides a formal syntax and semantics that the computer can interpret or compile into machine-readable code.
+
+The **"code"** you write is called <code>source code</code>. Source code is the set of human-readable instructions written in a programming language that defines what a program does. It is what programmers create, edit, and maintain before it is compiled or interpreted into machine code that a computer can execute.
 
 ## Exercise 1
 
