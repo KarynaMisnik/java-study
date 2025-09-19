@@ -13,6 +13,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
 - [Scanner](#scanner)
 - [String](#string)
 - [Concatenation](#concatenation)
+- [Variables](#variables)
 
 ## Introduction
 
@@ -148,6 +149,18 @@ When using <code>+</code> with a string and another type (like an int), Java aut
 For more complex concatenation, you can also use the <code>String.concat()</code> method or a <code>StringBuilder</code> (better for performance when joining many strings).
 
 👉 In short: Concatenation is the way to join text and other values into a single string in Java.
+
+## Variables
+
+A variable in Java is like a container that stores data.
+
+<ins>Each variable has:</ins>
+
+Type (what kind of data it can hold, e.g., <code>int</code>, <code>String</code>, <code>double</code>).
+
+Name (the label you give it, e.g., <code>age</code>, <code>message</code>).
+
+Value (the actual data stored).
 
 ## Exercise 1
 
