@@ -192,6 +192,17 @@ Once created, you use the variable name to access its value:
 System.out.println("Age is: " + age);
 ```
 
+**Key Rules**
+
+Variable names are **case-sensitive** (<code>Age</code> and <code>age</code> are different).
+
+Must start with a <code>letter</code>, <code>$</code>, or <code>\_</code> (not a number).
+
+Should be **descriptive** (e.g., <code>score</code> instead of <code>s</code>).
+
+> A variable is a named storage location in memory that holds a value you can
+> use and change while your program runs.
+
 ## Exercise 1
 
 1. Define a variable <code>age</code> <code>(int)</code> and check whether the person belongs to children **(under 13)**, **teenagers (13–19)**, **adults (20–64)**, or **seniors (65+)**. Print the correct group to
