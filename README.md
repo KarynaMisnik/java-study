@@ -12,6 +12,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
 - [Comments](#comments)
 - [Scanner](#scanner)
 - [String](#string)
+- [Concatenation](#concatenation)
 
 ## Introduction
 
@@ -116,6 +117,30 @@ A variable is a named container that holds data of a specific type. A string var
 String message = "Hello world!";
 ```
 
+Here, <code>message</code> stores the string literal <code>"Hello world!"</code>. When you reference message, the program prints its contents. But if you write **"message"** (with quotes), it prints the word <code>message</code> instead of the variable’s value.
+
+## Concatenation
+
+Concatenation means joining strings together.
+
+In Java, this is usually done with the <code>+</code> operator.
+
+You can also combine strings with other data types (numbers, booleans, etc.).
+
+Example:
+
+````java
+// Joining two strings
+String firstName = "John";
+String lastName = "Doe";
+String fullName = firstName + " " + lastName;
+System.out.println(fullName);   // Output: John Doe
+
+// Combining string with number
+int age = 25;
+System.out.println("Age: " + age);   // Output: Age: 25
+``´
+
 ## Exercise 1
 
 1. Define a variable <code>age</code> <code>(int)</code> and check whether the person belongs to children **(under 13)**, **teenagers (13–19)**, **adults (20–64)**, or **seniors (65+)**. Print the correct group to
@@ -146,7 +171,7 @@ System.out.println("Invalid");
 
 }
 }
-```
+````
 
 2. Define a grade <code>(int, 0–5)</code> and print a verbal evaluation based on the number:
    **0 = "Failed"**, **1–2 = "Poor"**, **3 = "Satisfactory"**, **4 = "Good"**, **5 = "Excellent"**.
