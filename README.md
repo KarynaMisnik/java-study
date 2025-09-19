@@ -129,7 +129,7 @@ You can also combine strings with other data types (numbers, booleans, etc.).
 
 Example:
 
-````java
+```java
 // Joining two strings
 String firstName = "John";
 String lastName = "Doe";
@@ -139,7 +139,15 @@ System.out.println(fullName);   // Output: John Doe
 // Combining string with number
 int age = 25;
 System.out.println("Age: " + age);   // Output: Age: 25
-``´
+```
+
+<ins>Key Points:</ins>
+
+When using <code>+</code> with a string and another type (like an int), Java automatically converts the other type into a string.
+
+For more complex concatenation, you can also use the <code>String.concat()</code> method or a <code>StringBuilder</code> (better for performance when joining many strings).
+
+👉 In short: Concatenation is the way to join text and other values into a single string in Java.
 
 ## Exercise 1
 
@@ -171,7 +179,7 @@ System.out.println("Invalid");
 
 }
 }
-````
+```
 
 2. Define a grade <code>(int, 0–5)</code> and print a verbal evaluation based on the number:
    **0 = "Failed"**, **1–2 = "Poor"**, **3 = "Satisfactory"**, **4 = "Good"**, **5 = "Excellent"**.
