@@ -162,6 +162,36 @@ Name (the label you give it, e.g., <code>age</code>, <code>message</code>).
 
 Value (the actual data stored).
 
+<ins>Declaring and Initializing Variables</ins>
+
+1. Declaration → telling Java you need a variable:
+
+```java
+int age;
+```
+
+2. Initialization → giving it a value:
+
+```java
+age = 25;
+```
+
+<ins>Examples of Common Variable Types:</ins>
+
+```java
+int number = 10;          // integer
+double price = 19.99;     // decimal number
+char grade = 'A';         // single character
+boolean isJavaFun = true; // true/false
+String name = "Alice";    // text
+```
+
+Once created, you use the variable name to access its value:
+
+```java
+System.out.println("Age is: " + age);
+```
+
 ## Exercise 1
 
 1. Define a variable <code>age</code> <code>(int)</code> and check whether the person belongs to children **(under 13)**, **teenagers (13–19)**, **adults (20–64)**, or **seniors (65+)**. Print the correct group to
