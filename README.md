@@ -11,6 +11,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
 - [Introduction](#introduction)
 - [Comments](#comments)
 - [Scanner](#scanner)
+- [String](#string)
 
 ## Introduction
 
@@ -97,6 +98,22 @@ public class ScannerExample {
         sc.close();
     }
 }
+```
+
+## String
+
+In programming, we use the term string (short for string of characters) to describe text, since a computer sees it as a sequence of characters.
+
+We’ve used strings in two ways:
+
+Passing a string in quotation marks to <code>print</code>.
+
+Storing user input in a string variable.
+
+A variable is a named container that holds data of a specific type. A string variable is declared by writing its type (<code>String</code>) and its name (e.g., <code>message</code>), and often assigning it a value:
+
+```java
+String message = "Hello world!";
 ```
 
 ## Exercise 1
