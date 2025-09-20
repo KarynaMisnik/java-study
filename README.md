@@ -14,6 +14,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
 - [String](#string)
 - [Concatenation](#concatenation)
 - [Variables](#variables)
+- [Mathematical operators](#mathematical-operators)
 
 ## Introduction
 
@@ -235,6 +236,69 @@ int value = 4.2; // Does not work
 double floatingPoint = 0.42;
 value = floatingPoint; // Neither does this
 ```
+
+## Mathematical operators
+
+<table>
+   <thead>
+      <tr>
+         <th>Operator</th>
+         <th>Description</th>
+         <th>Example</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>+</td>
+         <td>Addition</td>
+         <td><code>5 + 3 = 8</code></td>
+      </tr>
+      <tr>
+         <td>-</td>
+         <td>Subtraction</td>
+         <td><code>5 - 3 = 2</code></td>
+      </tr>
+      <tr>
+         <td>*</td>
+         <td>Multiplication</td>
+         <td><code>5 * 3 = 15</code></td>
+      </tr>
+      <tr>
+         <td>/</td>
+         <td>Division</td>
+         <td><code>6 / 3 = 2</code></td>
+      </tr>
+      <tr>
+         <td>%</td>
+         <td>Modulus (Remainder)</td>
+         <td><code>5 % 3 = 2</code></td>
+      </tr>
+      <tr>
+         <td>++</td>
+         <td>Increment</td>
+         <td><code>int x = 5; x++; // x = 6</code></td>
+      </tr>
+      <tr>
+         <td>--</td>
+         <td>Decrement</td>
+         <td><code>int x = 5; x--; // x = 4</code></td>
+      </tr>
+   </tbody>
+</table>
+
+**Important Notes:**
+
+If both operands are integers, <code>/</code> gives an integer result (fraction is cut off).
+
+<code>Example: 7 / 2 = 3 (not 3.5).</code>
+
+If at least one operand is a <code>double</code>, result will be decimal.
+
+<code>Example: 7.0 / 2 = 3.5.</code>
+
+<code>% (modulus)</code> gives the <ins>remainder</ins>.
+
+<code>Example: 10 % 4 = 2.</code>
 
 ## Exercise 1
 
