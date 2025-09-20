@@ -300,6 +300,25 @@ If at least one operand is a <code>double</code>, result will be decimal.
 
 <code>Example: 10 % 4 = 2.</code>
 
+**Increment & Decrement**
+
+Special operators for adding or subtracting 1.
+
+<code>++</code> → increase by 1
+
+<code>--</code> → decrease by 1
+
+<ins>Example:</ins>
+
+```java
+int x = 5;
+x++;  // now x = 6
+x--;  // now x = 5 again
+```
+
+> Mathematical operators in Java let you add, subtract, multiply, divide, and
+> find remainders, along with quick ways to increment or decrement values.
+
 ## Exercise 1
 
 1. Define a variable <code>age</code> <code>(int)</code> and check whether the person belongs to children **(under 13)**, **teenagers (13–19)**, **adults (20–64)**, or **seniors (65+)**. Print the correct group to
