@@ -15,6 +15,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
 - [Concatenation](#concatenation)
 - [Variables](#variables)
 - [Mathematical operators](#mathematical-operators)
+- [Conditional Statements](#conditional-statements)
 
 ## Introduction
 
@@ -318,6 +319,21 @@ x--;  // now x = 5 again
 
 > Mathematical operators in Java let you add, subtract, multiply, divide, and
 > find remainders, along with quick ways to increment or decrement values.
+
+## Conditional Statements
+
+Conditional statements allow a program to make decisions based on certain conditions. The computer executes different code depending on whether a condition is <code>true</code> or <code>false</code>.
+
+1. if Statement
+
+Executes a block of code only if a condition is <code>true</code>.
+
+```java
+int age = 18;
+if (age >= 18) {
+    System.out.println("You are an adult.");
+}
+```
 
 ## Exercise 1
 
