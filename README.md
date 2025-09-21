@@ -379,6 +379,17 @@ switch(day) {
 }
 ```
 
+**Key Points**
+
+Conditions usually use relational operators (<code>></code>, <code><</code>, <code>==</code>, <code>!=</code>, <code>>=</code>, <code><=</code>) or logical operators (<code>&&</code>, <code>||</code>, <code>!</code>).
+
+Blocks of code are enclosed in curly braces **{}**.
+
+**if-else** is preferred for ranges, **switch** is better for discrete values.
+
+> Conditional statements let your program make decisions and execute different
+> code depending on the situation.
+
 ## Exercise 1
 
 1. Define a variable <code>age</code> <code>(int)</code> and check whether the person belongs to children **(under 13)**, **teenagers (13–19)**, **adults (20–64)**, or **seniors (65+)**. Print the correct group to
