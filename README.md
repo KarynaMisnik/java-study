@@ -335,6 +335,19 @@ if (age >= 18) {
 }
 ```
 
+2. if-else Statement
+
+Executes one block if the condition is true, and another block if it’s <code>false</code>.
+
+```java
+int age = 16;
+if (age >= 18) {
+    System.out.println("You are an adult.");
+} else {
+    System.out.println("You are not an adult.");
+}
+```
+
 ## Exercise 1
 
 1. Define a variable <code>age</code> <code>(int)</code> and check whether the person belongs to children **(under 13)**, **teenagers (13–19)**, **adults (20–64)**, or **seniors (65+)**. Print the correct group to
