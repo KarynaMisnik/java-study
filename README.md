@@ -350,7 +350,7 @@ if (age >= 18) {
 
 3. else-if Ladder
 
-Checks multiple conditions in sequence.
+Checks multiple conditions in <code>sequence</code>.
 
 ```java
 int marks = 75;
@@ -362,6 +362,20 @@ if (marks >= 90) {
     System.out.println("Grade C");
 } else {
     System.out.println("Fail");
+}
+```
+
+4. switch Statement
+
+Used when you have a single variable to compare against many values.
+
+```java
+int day = 3;
+switch(day) {
+    case 1: System.out.println("Monday"); break;
+    case 2: System.out.println("Tuesday"); break;
+    case 3: System.out.println("Wednesday"); break;
+    default: System.out.println("Other day"); break;
 }
 ```
 
