@@ -392,6 +392,22 @@ Blocks of code are enclosed in curly braces **{}**.
 > Conditional statements let your program make decisions and execute different
 > code depending on the situation.
 
+## Methods
+
+#### substring
+
+<code>substring</code> is a method of the String class that lets you extract part of a string (a smaller string from a bigger one).
+
+🔹 Syntax
+
+There are two common forms:
+
+<code>substring(beginIndex)</code>
+→ Returns everything from beginIndex to the end.
+
+<code>substring(beginIndex, endIndex)</code>
+→ Returns everything from beginIndex up to but not including endIndex.
+
 ## Exercise 1
 
 1. Define a variable <code>age</code> <code>(int)</code> and check whether the person belongs to children **(under 13)**, **teenagers (13–19)**, **adults (20–64)**, or **seniors (65+)**. Print the correct group to
