@@ -13,7 +13,8 @@ public class TestMethod{
 
 public static void Print(String text, int num){
 for(int i = 0; i<num; i++){
- System.out.println(text);
+String capital = text.substring(0,1).toUpperCase() + text.substring(1);
+ System.out.println(capital);
 }
 }
 
