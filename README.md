@@ -408,6 +408,28 @@ There are two common forms:
 <code>substring(beginIndex, endIndex)</code>
 → Returns everything from beginIndex up to but not including endIndex.
 
+<ins>Example:</ins>
+
+```java
+public class SubstringExample {
+    public static void main(String[] args) {
+        String text = "Hello World";
+
+        // From index 6 to end
+        String part1 = text.substring(6);
+        System.out.println(part1);   // Output: World
+
+        // From index 0 up to index 5 (excluding 5)
+        String part2 = text.substring(0, 5);
+        System.out.println(part2);   // Output: Hello
+
+        // From index 3 up to index 7
+        String part3 = text.substring(3, 7);
+        System.out.println(part3);   // Output: lo W
+    }
+}
+```
+
 ## Exercise 1
 
 1. Define a variable <code>age</code> <code>(int)</code> and check whether the person belongs to children **(under 13)**, **teenagers (13–19)**, **adults (20–64)**, or **seniors (65+)**. Print the correct group to
@@ -582,7 +604,7 @@ System.out.println("The biggest number is " + numThree);
 
 2.  Look up the substring method online. Modify the previously created method to ensure that the first letter of the sentence is capitalized.
 
-´´´java
+```java
 import java.util.Scanner;
 
 public class TestMethod{
@@ -599,9 +621,9 @@ Scanner sc = new Scanner(System.in);
 System.out.print("What do you want to print: ");
 String txt = sc.nextLine();
 System.out.print("How many times: ");
-int times = sc.nextInt();  
+int times = sc.nextInt();
 Print(txt, times);
 sc.close();
 }
 }
-´´´
+```
