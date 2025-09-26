@@ -557,3 +557,9 @@ System.out.println("The biggest number is " + numThree);
 }
 }
 ```
+
+## Exercise 2 - Methods
+
+1.  Create a program with a method that takes an integer and a text string as input. The method should print the text as many times as the number specifies.
+
+2.  Look up the substring method online. Modify the previously created method to ensure that the first letter of the sentence is capitalized.
