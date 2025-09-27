@@ -21,6 +21,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
   - [toUpperCase()](<#toUpperCase()>)
   - [toLowerCase()](<#toLowerCase()>)
   - [contains()](<#contains()>)
+  - [startsWith()](<#startsWith()>)
 
 ## Introduction
 
@@ -462,6 +463,19 @@ System.out.println(text.toLowerCase());
 <code>contains()</code> checks if a string contains another substring. Returns true/false.
 
 <ins>Example</ins>
+
+```java
+String text = "Hello Java";
+
+System.out.println(text.contains("Java"));   // true
+System.out.println(text.contains("World"));  // false
+```
+
+#### startsWith()
+
+<code>contains()</code> checks if a string contains another substring. Returns true/false.
+
+<ins>Example:</ins>
 
 ```java
 String text = "Hello Java";
