@@ -22,6 +22,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
   - [toLowerCase()](<#toLowerCase()>)
   - [contains()](<#contains()>)
   - [startsWith()](<#startsWith()>)
+  - [endsWith()](<#endsWith()>)
 
 ## Introduction
 
@@ -482,6 +483,17 @@ String text = "Hello Java";
 
 System.out.println(text.startsWith("Hello")); // true
 System.out.println(text.startsWith("Java"));  // false
+```
+
+#### endsWith()
+
+<code>endsWith()</code> checks if a string ends with a certain sequence.
+
+```java
+String text = "Hello Java";
+
+System.out.println(text.endsWith("Java")); // true
+System.out.println(text.endsWith("Hello")); // false
 ```
 
 ## Exercise 1
