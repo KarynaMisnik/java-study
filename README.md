@@ -18,6 +18,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
 - [Conditional Statements](#conditional-statements)
 - [Methods](#methods)
   - [substring](#substring)
+  - [toUpperCase()](<#toUpperCase()>)
 
 ## Introduction
 
@@ -428,6 +429,18 @@ public class SubstringExample {
         System.out.println(part3);   // Output: lo W
     }
 }
+```
+
+#### toUpperCase()
+
+<code>toUpperCase()</code> converts all characters in a string to uppercase.
+
+<ins>Example:</ins>
+
+```java
+String text = "Hello Java";
+System.out.println(text.toUpperCase());
+// Output: HELLO JAVA
 ```
 
 ## Exercise 1
