@@ -19,6 +19,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
 - [Methods](#methods)
   - [substring](#substring)
   - [toUpperCase()](<#toUpperCase()>)
+  - [toLowerCase()](<#toLowerCase()>)
 
 ## Introduction
 
@@ -441,6 +442,18 @@ public class SubstringExample {
 String text = "Hello Java";
 System.out.println(text.toUpperCase());
 // Output: HELLO JAVA
+```
+
+#### toLowerCase()
+
+<code>toLowerCase()</code> converts all characters in a string to lowercase.
+
+<ins>Example:</ins>
+
+```java
+String text = "Hello Java";
+System.out.println(text.toLowerCase());
+// Output: hello java
 ```
 
 ## Exercise 1
