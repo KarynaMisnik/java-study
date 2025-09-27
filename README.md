@@ -473,15 +473,15 @@ System.out.println(text.contains("World"));  // false
 
 #### startsWith()
 
-<code>contains()</code> checks if a string contains another substring. Returns true/false.
+<code>startsWith()</code> checks if a string begins with a certain sequence.
 
 <ins>Example:</ins>
 
 ```java
 String text = "Hello Java";
 
-System.out.println(text.contains("Java"));   // true
-System.out.println(text.contains("World"));  // false
+System.out.println(text.startsWith("Hello")); // true
+System.out.println(text.startsWith("Java"));  // false
 ```
 
 ## Exercise 1
