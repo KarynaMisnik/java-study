@@ -20,6 +20,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
   - [substring](#substring)
   - [toUpperCase()](<#toUpperCase()>)
   - [toLowerCase()](<#toLowerCase()>)
+  - [contains()](<#contains()>)
 
 ## Introduction
 
@@ -454,6 +455,19 @@ System.out.println(text.toUpperCase());
 String text = "Hello Java";
 System.out.println(text.toLowerCase());
 // Output: hello java
+```
+
+#### contains()
+
+<code>contains()</code> checks if a string contains another substring. Returns true/false.
+
+<ins>Example</ins>
+
+```java
+String text = "Hello Java";
+
+System.out.println(text.contains("Java"));   // true
+System.out.println(text.contains("World"));  // false
 ```
 
 ## Exercise 1
