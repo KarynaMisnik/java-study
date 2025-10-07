@@ -718,3 +718,41 @@ public class NumProduct {
 ## Exersice 4 - Check Weekday
 
 Create a method called **Weekday** that takes one number (1–7) as a parameter. The method returns the corresponding day of the week. For example, if the parameter is the number 4, the function returns the text "Thursday".
+
+```java
+package Weekday;
+
+import java.util.Scanner;
+
+public class Weekday {
+    public static String getDayOfWeek(int dayNumber) {
+        switch (dayNumber) {
+            case 1:
+                return "Monday";
+            case 2:
+                return "Tuesday";
+            case 3:
+                return "Wednesday";
+            case 4:
+                return "Thursday";
+            case 5:
+                return "Friday";
+            case 6:
+                return "Saturday";
+            case 7:
+                return "Sunday";
+            default:
+                return "Invalid day number";
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number (1-7): ");
+        int dayNumber = sc.nextInt();
+        String day = getDayOfWeek(dayNumber);
+        System.out.println("The day of the week is: " + day);
+        sc.close();
+    }
+}
+```
