@@ -714,3 +714,7 @@ public class NumProduct {
     }
 }
 ```
+
+## Exersice 4 - Check Weekday
+
+Create a method called **Weekday** that takes one number (1–7) as a parameter. The method returns the corresponding day of the week. For example, if the parameter is the number 4, the function returns the text "Thursday".
