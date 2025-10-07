@@ -693,3 +693,24 @@ sc.close();
 }
 }
 ```
+
+## Exersice 3 - Product
+
+Create a method (function) called **Multiplier** that takes two integers as parameters: **n** and **m**. The function returns the product of these two numbers (n\*m).
+
+```bash
+public class NumProduct {
+
+    public static int Multiplier(int n, int m) {
+        int mult = n * m;
+        System.out.println("The product of " + n + " and " + m + " is: " + mult);
+        return mult;
+
+    }
+
+    public static void main(String[] args) {
+        Multiplier(6, 3);
+
+    }
+}
+```
