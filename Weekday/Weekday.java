@@ -30,5 +30,6 @@ public class Weekday {
         int dayNumber = sc.nextInt();
         String day = getDayOfWeek(dayNumber);
         System.out.println("The day of the week is: " + day);
+        sc.close();
     }
 }
