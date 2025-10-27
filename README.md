@@ -23,6 +23,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
   - [contains()](<#contains()>)
   - [startsWith()](<#startsWith()>)
   - [endsWith()](<#endsWith()>)
+- [Classes and Objects](#classes-and-objects)
 
 ## Introduction
 
@@ -496,7 +497,43 @@ System.out.println(text.endsWith("Java")); // true
 System.out.println(text.endsWith("Hello")); // false
 ```
 
-## Exercise 1
+## Classes and Objects
+
+```java
+public class Fish{
+    private String species;
+    private int weight;
+
+    public Fish(String species, int weight){
+        this.species = species;
+        this.weight = weight;
+    }
+
+    public String getSpecies(){
+        return species;
+    }
+
+    public void setSpecies(String species){
+         this.species = species;
+    }
+
+     public int getWeight(){
+        return weight;
+    }
+
+    public void setWeight(int weight){
+         this.weight = weight;
+    }
+
+    public void FishSpeak(){
+        System.out.println("Pulipuli!");
+    }
+}
+```
+
+## More examples
+
+#### Exercise 1
 
 1. Define a variable <code>age</code> <code>(int)</code> and check whether the person belongs to children **(under 13)**, **teenagers (13–19)**, **adults (20–64)**, or **seniors (65+)**. Print the correct group to
    the terminal. Use <code>if / else / else if</code> for comparison.
@@ -664,7 +701,7 @@ System.out.println("The biggest number is " + numThree);
 }
 ```
 
-## Exercise 2 - Methods
+#### Exercise 2 - Methods
 
 1.  Create a program with a method that takes an integer and a text string as input. The method should print the text as many times as the number specifies.
 
@@ -694,7 +731,7 @@ sc.close();
 }
 ```
 
-## Exersice 3 - Product
+#### Exersice 3 - Product
 
 Create a method (function) called **Multiplier** that takes two integers as parameters: **n** and **m**. The function returns the product of these two numbers (n\*m).
 
@@ -715,7 +752,7 @@ public class NumProduct {
 }
 ```
 
-## Exersice 4 - Check Weekday
+#### Exersice 4 - Check Weekday
 
 Create a method called **Weekday** that takes one number (1–7) as a parameter. The method returns the corresponding day of the week. For example, if the parameter is the number 4, the function returns the text "Thursday".
 
@@ -757,7 +794,7 @@ public class Weekday {
 }
 ```
 
-## Exersice 5 - Print Matrix(nested loops)
+#### Exersice 5 - Print Matrix(nested loops)
 
 ```java
 public class Matrix {

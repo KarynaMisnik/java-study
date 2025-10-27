@@ -21,6 +21,6 @@ public class AgeChecker {
         } else {
             System.out.println("Invalid");
         }
-
+        scanner.close();
     }
 }

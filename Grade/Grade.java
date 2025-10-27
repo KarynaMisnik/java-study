@@ -32,6 +32,6 @@ public class Grade {
             default:
                 System.out.println("Invalid");
         }
-
+        scanner.close();
     }
 }
