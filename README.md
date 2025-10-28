@@ -499,6 +499,25 @@ System.out.println(text.endsWith("Hello")); // false
 
 ## Classes and Objects
 
+1. What is a Class?
+
+A class is a blueprint or template for creating objects.
+
+It defines:
+What data an object has (fields / variables)
+What actions it can perform (methods)
+
+```java
+public class Fish {
+    ...
+}
+```
+
+👉 Fish is a class.
+It describes what a fish is and what it can do, but it is not a real fish yet.
+
+Think of a class like a recipe.
+
 ```java
 public class Fish{
     private String species;
