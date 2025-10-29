@@ -513,10 +513,31 @@ public class Fish {
 }
 ```
 
-👉 Fish is a class.
+👉 <code>Fish</code> is a class.
 It describes what a fish is and what it can do, but it is not a real fish yet.
 
 Think of a class like a recipe.
+
+2. What are Fields (Instance Variables)?
+
+Fields store the state (data) of an object.
+
+```java
+private String species;
+private int weight;
+```
+
+<code>species</code> → what kind of fish
+<code>weight</code> → how heavy the fish is
+
+**Why private?**
+
+This is **encapsulation** (data hiding).
+
+private means only the <code>Fish</code> class can directly access these variables
+
+Outside code must use <code>getters</code> and <code>setters</code>
+This protects your data from invalid or uncontrolled changes.
 
 ```java
 public class Fish{
