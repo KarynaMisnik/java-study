@@ -571,6 +571,28 @@ public class Fish{
 }
 ```
 
+3. What is an Object?
+
+An object is a real instance created from a class.
+
+Example:
+
+```java
+Fish salmon = new Fish("Salmon", 5);
+Fish tuna = new Fish("Tuna", 10);
+```
+
+**salmon** and **tuna** are objects
+Both come from the same **class (Fish)**
+Each object has its own data
+
+| Object | species | weight |
+| ------ | ------- | ------ |
+| salmon | Salmon  | 5      |
+| tuna   | Tuna    | 10     |
+
+👉 One class → many objects
+
 ## More examples
 
 #### Exercise 1
