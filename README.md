@@ -593,6 +593,32 @@ Each object has its own data
 
 👉 One class → many objects
 
+4. What is a Constructor?
+
+A **constructor** is a special method used to create and initialize an object.
+
+```java
+public Fish(String species, int weight) {
+    this.species = species;
+    this.weight = weight;
+}
+```
+
+Key points:
+Has the same name as the class
+No return type (not even void)
+Runs automatically when you use new Fish(...)
+
+What does **this** mean?
+<code>this</code> refers to the current object.
+
+```java
+this.species = species;
+```
+
+Left side → object’s field
+Right side → constructor parameter
+
 ## More examples
 
 #### Exercise 1
