@@ -619,6 +619,32 @@ this.species = species;
 Left side → object’s field
 Right side → constructor parameter
 
+5. What is a Getter?
+
+A **getter** is a method that returns the value of a private field.
+
+```java
+public String getSpecies() {
+    return species;
+}
+
+public int getWeight() {
+    return weight;
+}
+```
+
+Why use getters?
+Allows read-only access
+Keeps fields private
+You can add logic later without changing other code
+
+Example usage:
+
+```java
+System.out.println(salmon.getSpecies());
+System.out.println(salmon.getWeight());
+```
+
 ## More examples
 
 #### Exercise 1
