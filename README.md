@@ -645,6 +645,40 @@ System.out.println(salmon.getSpecies());
 System.out.println(salmon.getWeight());
 ```
 
+6. What is a Setter?
+
+A **setter** is a method that modifies a private field.
+
+```java
+public void setSpecies(String species) {
+    this.species = species;
+}
+
+public void setWeight(int weight) {
+    this.weight = weight;
+}
+```
+
+Why use setters?
+Control how values are changed
+Add validation
+
+Example:
+
+```java
+salmon.setWeight(6);
+```
+
+You could improve it like this:
+
+```java
+public void setWeight(int weight) {
+    if (weight > 0) {
+        this.weight = weight;
+    }
+}
+```
+
 ## More examples
 
 #### Exercise 1
