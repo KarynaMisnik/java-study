@@ -679,6 +679,26 @@ public void setWeight(int weight) {
 }
 ```
 
+7. What is a Method?
+
+A method defines behavior—what an object can do.
+
+```java
+public void FishSpeak() {
+    System.out.println("Pulipuli!");
+}
+```
+
+This method:
+Belongs to the Fish class
+Can be called on an object
+
+Example:
+
+```java
+salmon.FishSpeak();
+```
+
 ## More examples
 
 #### Exercise 1
