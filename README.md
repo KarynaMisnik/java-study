@@ -539,38 +539,6 @@ private means only the <code>Fish</code> class can directly access these variabl
 Outside code must use <code>getters</code> and <code>setters</code>
 This protects your data from invalid or uncontrolled changes.
 
-```java
-public class Fish{
-    private String species;
-    private int weight;
-
-    public Fish(String species, int weight){
-        this.species = species;
-        this.weight = weight;
-    }
-
-    public String getSpecies(){
-        return species;
-    }
-
-    public void setSpecies(String species){
-         this.species = species;
-    }
-
-     public int getWeight(){
-        return weight;
-    }
-
-    public void setWeight(int weight){
-         this.weight = weight;
-    }
-
-    public void FishSpeak(){
-        System.out.println("Pulipuli!");
-    }
-}
-```
-
 3. What is an Object?
 
 An object is a real instance created from a class.
@@ -698,6 +666,87 @@ Example:
 ```java
 salmon.FishSpeak();
 ```
+
+8. Encapsulation
+
+The class demonstrates encapsulation:
+Data is private
+Access is controlled via public methods
+
+```java
+private String species;
+private int weight;
+```
+
+Accessed safely via:
+
+```java
+getSpecies()
+setSpecies()
+getWeight()
+setWeight()
+```
+
+The full example:
+
+```java
+public class Fish{
+    private String species;
+    private int weight;
+
+    public Fish(String species, int weight){
+        this.species = species;
+        this.weight = weight;
+    }
+
+    public String getSpecies(){
+        return species;
+    }
+
+    public void setSpecies(String species){
+         this.species = species;
+    }
+
+     public int getWeight(){
+        return weight;
+    }
+
+    public void setWeight(int weight){
+         this.weight = weight;
+    }
+
+    public void FishSpeak(){
+        System.out.println("Pulipuli!");
+    }
+}
+```
+
+<code>Main class</code>
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Fish fish = new Fish("Goldfish", 2);
+
+        fish.FishSpeak(); // Pulipuli!
+
+        System.out.println(fish.getSpecies()); // Goldfish
+        fish.setWeight(3);
+        System.out.println(fish.getWeight()); // 3
+    }
+}
+```
+
+| Concept       | In Code                                   |
+| ------------- | ----------------------------------------- |
+| Class         | `Fish`                                    |
+| Object        | `new Fish("Salmon", 5)`                   |
+| Field         | `species`, `weight`                       |
+| Constructor   | `Fish(String species, int weight)`        |
+| Getter        | `getSpecies()`, `getWeight()`             |
+| Setter        | `setSpecies()`, `setWeight()`             |
+| Method        | `FishSpeak()`                             |
+| Encapsulation | `private` fields + public getters/setters |
 
 ## More examples
 
