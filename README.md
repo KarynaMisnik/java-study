@@ -24,6 +24,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
   - [startsWith()](<#startsWith()>)
   - [endsWith()](<#endsWith()>)
 - [Classes and Objects](#classes-and-objects)
+- [Static variables and classes](#static-variables-and-classes)
 
 ## Introduction
 
@@ -747,6 +748,102 @@ public class Main {
 | Setter        | `setSpecies()`, `setWeight()`             |
 | Method        | `FishSpeak()`                             |
 | Encapsulation | `private` fields + public getters/setters |
+
+## Static variables and classes
+
+<code>static</code> means “belongs to the class, not to objects.”
+
+**Non-static** → belongs to each object
+**Static** → shared by all objects of the class
+
+A static variable is shared by all objects of a class.
+
+```java
+class Fish {
+    static int totalFish = 0;  // static variable
+    String species;           // instance variable
+
+    Fish(String species) {
+        this.species = species;
+        totalFish++;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Fish f1 = new Fish("Salmon");
+        Fish f2 = new Fish("Tuna");
+
+        System.out.println(Fish.totalFish); // 2
+    }
+}
+```
+
+Explanation
+
+<code>totalFish</code> belongs to class Fish
+Only one copy exists in memory
+Every object updates the same variable
+
+📌 Access static variables using the class name:
+<code>Fish.totalFish</code>
+
+**Instance Variable vs Static Variable**
+
+```java
+class Example {
+    int x = 10;         // instance variable
+    static int y = 20;  // static variable
+}
+```
+
+| Variable | Belongs To  | Copies         |
+| -------- | ----------- | -------------- |
+| `x`      | Each object | One per object |
+| `y`      | Class       | One total      |
+
+**Static Method**
+
+A static method:
+Belongs to the class
+Can be called without creating an object
+
+Example
+
+```java
+class MathUtils {
+    static int add(int a, int b) {
+        return a + b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        int sum = MathUtils.add(3, 4);
+        System.out.println(sum); // 7
+    }
+}
+
+//NO OBJECT NEEDED
+```
+
+❌ Static methods cannot access non-static variables directly
+✅ Static methods can access:
+Static variables
+Other static methods
+
+**Why main Method is Static**
+Because:
+Java needs to run main without creating an object
+Static allows JVM to call it directly
+
+When Should You Use static?
+
+✅ Use static when:
+
+Data is shared (counter, config, constants)
+Method does not depend on object data
+Utility/helper methods
 
 ## More examples
 
