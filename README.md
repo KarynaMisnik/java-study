@@ -25,6 +25,7 @@ Java Studies & Notes – A collection of notes, exercises, and examples from my 
   - [endsWith()](<#endsWith()>)
 - [Classes and Objects](#classes-and-objects)
 - [Static variables and classes](#static-variables-and-classes)
+- [Inheritance](#inheritance)
 
 ## Introduction
 
@@ -844,6 +845,210 @@ When Should You Use static?
 Data is shared (counter, config, constants)
 Method does not depend on object data
 Utility/helper methods
+
+# Inheritance
+
+**Inheritance** allows one class to reuse another class’s code.
+<code>Parent (Superclass)</code> → class being inherited
+<code>Child (Subclass)</code> → class that inherits
+In Java, inheritance represents an “is-a” relationship.
+
+👉 Example:
+A Shark is a Fish
+
+```java
+class Fish {
+    void swim() {
+        System.out.println("Fish is swimming");
+    }
+}
+
+class Shark extends Fish {
+    void bite() {
+        System.out.println("Shark bites!");
+    }
+}
+
+//Main
+public class Main {
+    public static void main(String[] args) {
+        Shark shark = new Shark();
+
+        shark.swim(); // inherited from Fish
+        shark.bite(); // Shark's own method
+    }
+}
+```
+
+✅ Shark inherits swim() from Fish
+
+**What Gets Inherited?**
+
+| Member Type  | Inherited?                         |
+| ------------ | ---------------------------------- |
+| `public`     | ✅ Yes                             |
+| `protected`  | ✅ Yes                             |
+| `private`    | ❌ No (but accessible via methods) |
+| Constructors | ❌ No                              |
+| Methods      | ✅ Yes                             |
+| Variables    | ✅ Yes                             |
+
+<code>super</code> Keyword
+
+**super** refers to the parent class.
+
+a) Access Parent Method
+
+```java
+class Shark extends Fish {
+    void swim() {
+        super.swim(); // call Fish's swim
+        System.out.println("Shark swims fast");
+    }
+}
+```
+
+b) Call Parent Constructor
+
+```java
+class Fish {
+    String species;
+
+    Fish(String species) {
+        this.species = species;
+    }
+}
+
+class Shark extends Fish {
+    Shark() {
+        super("Shark"); // must be first line
+    }
+}
+```
+
+**Method Overriding**
+
+Overriding means redefining a parent method in a child class.
+
+Rules
+Same method name
+Same parameters
+Same return type (or subtype)
+Access level cannot be more restrictive
+
+```java
+class Fish {
+    void makeSound() {
+        System.out.println("Fish sound");
+    }
+}
+
+class Shark extends Fish {
+    @Override
+    void makeSound() {
+        System.out.println("Shark sound");
+    }
+}
+```
+
+<code>@Override</code> Annotation (Recommended)
+
+```java
+@Override
+void makeSound() { ... }
+```
+
+**Types of Inheritance in Java**
+
+1️⃣ Single Inheritance
+
+```java
+class B extends A {}
+```
+
+2️⃣ Multilevel Inheritance
+
+```java
+class A {}
+class B extends A {}
+class C extends B {}
+```
+
+❌ Multiple Inheritance (Classes)
+
+Java does not allow:
+
+```java
+class C extends A, B {} // ❌ NOT allowed
+```
+
+Because of <ins>ambiguity (Diamond Problem)</ins>
+
+**Inheritance with <code>protected</code>**
+
+**protected** allows child classes to access parent members.
+
+```java
+class Fish {
+    protected int weight;
+}
+
+class Shark extends Fish {
+    void showWeight() {
+        System.out.println(weight);
+    }
+}
+```
+
+**Polymorphism (Inheritance in Action)**
+
+Parent reference → Child object
+
+```java
+Fish f = new Shark();
+f.makeSound(); // calls Shark's method
+```
+
+✔ Method call depends on object type, not reference type
+
+**<code>final</code> and Inheritance**
+
+**final** Class (Cannot be Inherited)
+
+```java
+final class Fish {}
+class Shark extends Fish {} // ❌ ERROR
+```
+
+<code>final</code> Method (Cannot be Overridden)
+
+```java
+class Fish {
+    final void swim() {}
+}
+```
+
+**When to Use Inheritance?**
+
+✅ Use inheritance when:
+
+There is a true is-a relationship
+
+You want code reuse
+
+Behavior should be extended or specialized
+
+❌ Avoid inheritance when:
+
+Relationship is has-a (use composition instead)
+
+| Concept              | Explanation                     |
+| -------------------- | ------------------------------- |
+| `extends`            | Used to inherit a class         |
+| `super`              | Refers to parent class          |
+| Method overriding    | Child redefines parent behavior |
+| Polymorphism         | Parent reference → child object |
+| Multiple inheritance | ❌ Not allowed for classes      |
 
 ## More examples
 
