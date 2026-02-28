@@ -51,15 +51,45 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student student = new Student();
-        student.name = "John";
-        student.age = 23;
-        student.score = 79;
+        Student[] students = new Student[3];
+        students[0] = new Student();
+        students[0].name = "John";
+        students[0].age = 23;
+        students[0].score = 89;
 
-        student.printInfo();
-        student.checkPass();
-        student.checkGrade();
+        students[1] = new Student();
+        students[1].name = "Erik";
+        students[1].age = 21;
+        students[1].score = 65;
 
+        students[2] = new Student();
+        students[2].name = "Peter";
+        students[2].age = 17;
+        students[2].score = 90;
+
+        for (int i = 0; i < students.length; i++) {
+            students[i].printInfo();
+            students[i].checkPass();
+            students[i].checkGrade();
+        }
+
+        Student best = students[0];
+        Student lowestGrade = students[0];
+
+        for (int j = 0; j < students.length; j++) {
+            if (students[j].score < lowestGrade.score) {
+                lowestGrade = students[j];
+            } else if (students[j].score > best.score) {
+                best = students[j];
+            }
+        }
+
+        int diff = best.score - lowestGrade.score;
+
+        System.out.print("Best Student ");
+        best.printInfo();
+        System.out.print("Lowest grade ");
+        lowestGrade.printInfo();
+        System.out.println("Difference: " + diff);
     }
-
 }
